@@ -9,7 +9,7 @@ def display_menu(menu):
 
 def calculate_total(order, menu):
     total = 0                 # Total starts from zero
-    for item in order:       
-        total += menu[item]  
-    return total             
+    for item in order:        # We go over each item in the
+        total += menu[item]   # Add the item price to the total.
+    return total              # Return the total value
 
