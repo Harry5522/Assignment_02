@@ -48,4 +48,7 @@ else:
     more = input("Do you want to order more? (yes/no): ").strip().lower()
     if more == "np":      # If the answer is (no) we exit the loop.
         break
-
+    
+    if not order:
+        print("You did not order anything.")  
+        return
