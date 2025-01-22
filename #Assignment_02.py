@@ -64,5 +64,9 @@ while True:
     if amount < total:                    # If the amount is less than the total
         print(f"Insufficient amount! You need {total - amount} AED more.")
     else:
+        change = amount - total  
+        print(f"Payment successful! Your change is {change:.2f} AED.") 
+        break   
+
 
         
