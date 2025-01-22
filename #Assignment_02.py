@@ -8,7 +8,7 @@ def display_menu(menu):
 
 
 def calculate_total(order, menu):
-    total = 0                
+    total = 0                 # Total starts from zero
     for item in order:       
         total += menu[item]  
     return total             
