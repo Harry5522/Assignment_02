@@ -1,5 +1,6 @@
 #Assignment 02
 
+
 #Define the menu function
 def display_menu(menu):
     print("\nMenu:")  
@@ -35,8 +36,4 @@ print("Welcome to the restaurant!")
 while True:
     display_menu(menu)  # Show list
     choice = input("Enter the name of the item you want to order: ").strip()  # Enter the selection
-
-
-
-
-
+    
