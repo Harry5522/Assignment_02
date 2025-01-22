@@ -14,7 +14,7 @@ def calculate_total(order, menu):
     return total              # Return the total value
 
 
-def main():    
+def main():      # Menu with prices
            
     menu = {
         "Cheesecake": 35,
