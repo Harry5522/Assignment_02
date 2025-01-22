@@ -25,3 +25,8 @@ def main():      # Menu with prices
         "Juice": 10,
         "Water": 4
     }
+
+
+order = [] 
+ print("Welcome to the restaurant!")  
+
