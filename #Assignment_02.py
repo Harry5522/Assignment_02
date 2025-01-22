@@ -28,8 +28,15 @@ def main():      # Menu with prices
 
 
 order = []          # Create an empty list to store orders
- print("Welcome to the restaurant!")  
+print("Welcome to the restaurant!")  
+
 
     # Start the order process
-     while True:
-        display_menu(menu)  # Show list
+while True:
+    display_menu(menu)  # Show list
+    choice = input("Enter the name of the item you want to order: ").strip()  # Enter the selection
+
+
+
+
+
