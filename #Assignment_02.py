@@ -58,4 +58,11 @@ else:
         print(f"- {item}: {menu[item]} AED")
     print(f"Total: {total} AED")          # Show total
         
+while True:
+    try:
+        amount = float(input("Enter the amount you are paying: "))   # Enter the amount paid
+    if amount < total:                    # If the amount is less than the total
+        print(f"Insufficient amount! You need {total - amount} AED more.")
+    else:
+
         
