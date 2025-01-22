@@ -13,3 +13,15 @@ def calculate_total(order, menu):
         total += menu[item]   # Add the item price to the total.
     return total              # Return the total value
 
+
+def main():    
+           
+    menu = {
+        "Cheesecake": 35,
+        "Kunafa": 30,
+        "Coffee": 20,
+        "Arabic Coffee": 25,
+        "Matcha": 18,
+        "Juice": 10,
+        "Water": 4
+    }
