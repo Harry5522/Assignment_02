@@ -27,6 +27,6 @@ def main():      # Menu with prices
     }
 
 
-order = [] 
+order = []          # Create an empty list to store orders
  print("Welcome to the restaurant!")  
 
