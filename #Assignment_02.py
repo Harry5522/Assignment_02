@@ -49,6 +49,7 @@ else:
     if more == "no":      # If the answer is (no) we exit the loop.
         break
     
+    
     if not order:
         print("You did not order anything.")  # Message if nothing is requested return
 
@@ -66,7 +67,14 @@ while True:
     else:
         change = amount - total           # Remainder calculation
         print(f"Payment successful! Your change is {change:.2f} AED.") 
-        break   
+        break       # Exit the episode after completing the payment
+
+ 
+
+
+
+
+
 
 
         
