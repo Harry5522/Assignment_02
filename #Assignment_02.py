@@ -45,4 +45,7 @@ else:
     print("Item not found in the menu. Please choose again.") # Error message when selecting a non-existent item
 
 
-    
+    more = input("Do you want to order more? (yes/no): ").strip().lower()
+    if more == "np":
+        break
+
