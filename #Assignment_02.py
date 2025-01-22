@@ -44,8 +44,8 @@ if choice in menu:
 else:
     print("Item not found in the menu. Please choose again.") # Error message when selecting a non-existent item
 
-
+    # Ask the user if he wants to order more
     more = input("Do you want to order more? (yes/no): ").strip().lower()
-    if more == "np":
+    if more == "np":      # If the answer is (no) we exit the loop.
         break
 
