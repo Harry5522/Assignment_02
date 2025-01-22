@@ -59,15 +59,15 @@ while True:
 while True:
     try:
         amount = float(input("Enter the amount you are paying: "))   # Enter the amount paid
-    if amount < total:                    # If the amount is less than the total
-        print(f"Insufficient amount! You need {total - amount} AED more.")
-    else:
-        change = amount - total           # Remainder calculation
+        if amount < total:                    # If the amount is less than the total
+            print(f"Insufficient amount! You need {total - amount} AED more.")
+        else:
+            change = amount - total           # Remainder calculation
         print(f"Payment successful! Your change is {change:.2f} AED.") 
         break      # Exit the episode after completing the payment
-    
+
     except ValueError:  
-    print("Invalid input. Please enter a valid number.") # Error message
+        print("Invalid input. Please enter a valid number.") # Error message
     
     print("Thank you for dining with us!")  # Thank you lette
     
