@@ -52,10 +52,10 @@ else:
     if not order:
         print("You did not order anything.")  # Message if nothing is requested return
 
-    total = calculate_total(order, menu) 
+    total = calculate_total(order, menu)  # Total calculation
     print("\nYour Order:") 
-    for item in order:                  
+    for item in order:                    # Show all item in order  
         print(f"- {item}: {menu[item]} AED")
-    print(f"Total: {total} AED")
+    print(f"Total: {total} AED")          # Show total
         
         
