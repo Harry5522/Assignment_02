@@ -37,9 +37,12 @@ while True:
     display_menu(menu)  # Show list
     choice = input("Enter the name of the item you want to order: ").strip()  # Enter the selection
 
-
+# Verify that the item is in the list.
 if choice in menu:
     order.append(choice)  # Add item to order
     print(f"{choice} added to your order.")  
 else:
-    print("Item not found in the menu. Please choose again.")
+    print("Item not found in the menu. Please choose again.") # Error message when selecting a non-existent item
+
+
+    
