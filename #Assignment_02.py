@@ -32,8 +32,14 @@ order = []          # Create an empty list to store orders
 print("Welcome to the restaurant!")  
 
 
-    # Start the order process
+# Start the order process
 while True:
     display_menu(menu)  # Show list
     choice = input("Enter the name of the item you want to order: ").strip()  # Enter the selection
-    
+
+
+if choice in menu:
+    order.append(choice)  # Add item to order
+    print(f"{choice} added to your order.")  
+else:
+    print("Item not found in the menu. Please choose again.")
