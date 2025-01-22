@@ -26,8 +26,7 @@ def main():      # Menu with prices
         "Juice": 10,
         "Water": 4
     }
-
-
+  
 order = []          # Create an empty list to store orders
 print("Welcome to the restaurant!")  
 
@@ -36,19 +35,17 @@ print("Welcome to the restaurant!")
 while True:
     display_menu(menu)  # Show list
     choice = input("Enter the name of the item you want to order: ").strip()  # Enter the selection
-
-# Verify that the item is in the list.
-if choice in menu:
-    order.append(choice)  # Add item to order
-    print(f"{choice} added to your order.")  
-else:
-    print("Item not found in the menu. Please choose again.") # Error message when selecting a non-existent item
+    
+    if choice in menu:    # Verify that the item is in the list.
+        order.append(choice)  # Add item to order
+        print(f"{choice} added to your order.")  
+    else:
+        print("Item not found in the menu. Please choose again.") # Error message when selecting a non-existent item
 
     # Ask the user if he wants to order more
     more = input("Do you want to order more? (yes/no): ").strip().lower()
     if more == "no":      # If the answer is (no) we exit the loop.
         break
-    
     
     if not order:
         print("You did not order anything.")  # Message if nothing is requested return
@@ -67,11 +64,16 @@ while True:
     else:
         change = amount - total           # Remainder calculation
         print(f"Payment successful! Your change is {change:.2f} AED.") 
-        break       # Exit the episode after completing the payment
+        break      # Exit the episode after completing the payment
+    
+    except ValueError:  
+    print("Invalid input. Please enter a valid number.") # Error message
+    
+    print("Thank you for dining with us!")  # Thank you lette
+    
 
- 
-
-
+if __name__ == "__main__":
+    main()
 
 
 
