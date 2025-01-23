@@ -28,8 +28,8 @@ def main():
     } 
 
 
-# Define the stock quantity for each product
-stock = {
+    # Define the stock quantity for each product
+    stock = {
         "Cheesecake": 18,
         "Kunafa": 15,
         "Coffee": 23,
@@ -40,10 +40,9 @@ stock = {
     }
 
 
-order = []                     # Empty list will be filled during orders
-print("Welcome to the restaurant!") 
+    order = []                     # Empty list will be filled during orders
+    print("Welcome to the restaurant!")
 
-
-while True:
-
-
+    while True:                    
+        display_menu(menu, stock)  
+        choice = input("Enter the name of the item you want to order: ").strip()  
