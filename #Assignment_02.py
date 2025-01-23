@@ -61,8 +61,9 @@ def main():
                             print(f"Sorry, we only have {stock[choice]} {choice} available.")   # Message if the required quantity is more than stock
                         else:
 
-                            stock[choice] -= quantity 
+                            stock[choice] -= quantity              # Reduce the quantity available in stock 
                             print(f"{quantity} {choice}(s) added to your order.")
+                            break                                  # Exit the inner loop when the request succeeds
 
     
                         
