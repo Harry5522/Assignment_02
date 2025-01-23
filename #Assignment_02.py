@@ -8,7 +8,7 @@ def display_menu(menu, stock):
 
 
 def calculate_total(order, menu):
-    total = 0
+    total = 0               # Variable to save total
     for item, quantity in order:
-        total += menu[item] * quantity  
+        total += menu[item] * quantity  # Calculate the total cost of each product  
     return total  
