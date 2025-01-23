@@ -11,4 +11,17 @@ def calculate_total(order, menu):
     total = 0               # Variable to save total
     for item, quantity in order:
         total += menu[item] * quantity  # Calculate the total cost of each product  
-    return total  
+    return total 
+
+# Main function to run the program
+def main():
+
+     # Definition of menu with product prices
+    menu = {               
+        "Cheesecake": 35,
+        "Kunafa": 30,
+        "Coffee": 20,
+        "Matcha": 18,
+        "Juice": 10,
+        "Water": 3
+    } 
