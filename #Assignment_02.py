@@ -87,11 +87,15 @@ def main():
         return
 
     
+    # Total order calculation
     total = calculate_total(order, menu)  
     print("\nYour Order:")
     for item, quantity in order:
-        print(f"- {item} x{quantity}: {menu[item] * quantity} AED")  
-    print(f"Total: {total} AED")
+        print(f"- {item} x{quantity}: {menu[item] * quantity} AED")  # View order details  
+    print(f"Total: {total} AED")                                     # Print total
+
+
+    
 
                         
                          
