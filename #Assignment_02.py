@@ -56,8 +56,8 @@ def main():
                 while True:         # Inner ring to check the required quantity 
                     try:
                         quantity = int(input(f"How many {choice} would you like to order?: "))  
-                        if quantity <= 0:
-                            print("Quantity must be at least 1.")
+                        if quantity <= 0:                          # Verify that the entered quantity is valid.
+                            print("Quantity must be at least 1.")  # Error message if quantity is incorrect
                         
                          
                         
