@@ -1,5 +1,6 @@
 #Assignment 02
 
+
 # Show menu with prices
 def display_menu(menu, stock):
     print("\nMenu:")
@@ -12,6 +13,7 @@ def calculate_total(order, menu):
     for item, quantity in order:
         total += menu[item] * quantity  # Calculate the total cost of each product  
     return total 
+
 
 # Main function to run the program
 def main():
@@ -81,7 +83,6 @@ def main():
             break
 
 
-
     if not order:      # Check if the user did not request anything
         print("You did not order anything.")  
         return
@@ -93,6 +94,7 @@ def main():
     for item, quantity in order:
         print(f"- {item} x{quantity}: {menu[item] * quantity} AED")  # View order details  
     print(f"Total: {total} AED")                                     # Print total
+
 
 
     while True:
@@ -114,6 +116,11 @@ def main():
             print("Invalid input. Please enter a valid number.")
 
     print("Thank you for dining with us!")
+
+
+if __name__ == "__main__":
+    main()
+
 
                         
                          
