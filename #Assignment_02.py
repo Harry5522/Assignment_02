@@ -82,7 +82,7 @@ def main():
 
 
 
-    if not order:
+    if not order:      # Check if the user did not request anything
         print("You did not order anything.")  
         return
 
