@@ -41,23 +41,24 @@ def main():
 
 
     order = []                     # Empty list will be filled during orders
-    print("Welcome to the restaurant!")
+    print("Welcome to the restaurant!")  
 
 
 
 
-
-    while True:                    # Continuous loop until the user decides to end the request                    
-        display_menu(menu, stock)  # Display the menu available to the user.  
-        choice = input("Enter the name of the item you want to order: ").strip()  # Request product selection from user 
+    while True:                    # Continuous loop until the user decides to end the request
+        display_menu(menu, stock)  # Display the menu available to the user.
+        choice = input("Enter the name of the item you want to order: ").strip()  # Request product selection from user
 
         if choice in menu:          # Verify that the product is in the list
             if stock[choice] > 0:   # Check if the product is in stock
-                while True:         # Inner ring to check the required quantity 
+                while True:         # Inner ring to check the required quantity
                     try:
                         quantity = int(input(f"How many {choice} would you like to order?: "))  
                         if quantity <= 0:                          # Verify that the entered quantity is valid.
                             print("Quantity must be at least 1.")  # Error message if quantity is incorrect
+
+    
                         
                          
                         
