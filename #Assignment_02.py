@@ -101,8 +101,8 @@ def main():
             if amount < total:                                          # Verify that the amount paid is sufficient
                 print(f"Insufficient amount! You need {total - amount} AED more.")
             else:
-                change = amount - total  
-                print(f"Payment successful! Your change is {change:.2f} AED.")
+                change = amount - total   # Remainder calculation
+                print(f"Payment successful! Your change is {change:.2f} AED.")      # Payment Success Message
 
                         
                          
