@@ -65,6 +65,9 @@ def main():
                             print(f"{quantity} {choice}(s) added to your order.")
                             break                                  # Exit the inner loop when the request succeeds
 
+                    except ValueError:
+                        print("Invalid input. Please enter a valid number.")
+
     
                         
                          
