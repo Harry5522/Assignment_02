@@ -21,6 +21,7 @@ def main():
         "Cheesecake": 35,
         "Kunafa": 30,
         "Coffee": 20,
+        "Arabic Coffee": 25,
         "Matcha": 18,
         "Juice": 10,
         "Water": 3
