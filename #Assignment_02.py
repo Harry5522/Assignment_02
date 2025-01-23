@@ -43,6 +43,17 @@ def main():
     order = []                     # Empty list will be filled during orders
     print("Welcome to the restaurant!")
 
-    while True:                    
-        display_menu(menu, stock)  
-        choice = input("Enter the name of the item you want to order: ").strip()  
+
+
+
+
+    while True:                    # Continuous loop until the user decides to end the request                    
+        display_menu(menu, stock)  # Display the menu available to the user.  
+        choice = input("Enter the name of the item you want to order: ").strip()  # Request product selection from user 
+
+        if choice in menu:
+            if stock[choice] > 0:
+                while True: 
+                    try:
+                        
+                    
