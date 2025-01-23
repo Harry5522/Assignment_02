@@ -75,6 +75,9 @@ def main():
             print("Item not found in the menu. Please choose again.")  # Message if the product is not in the list
 
     
+        more = input("Do you want to order more? (yes/no): ").strip().lower()
+        if more == "no":
+            break
                         
                          
                         
