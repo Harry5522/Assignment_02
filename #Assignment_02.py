@@ -74,9 +74,10 @@ def main():
         else:
             print("Item not found in the menu. Please choose again.")  # Message if the product is not in the list
 
-    
+
+        # Check if the user wants to order more
         more = input("Do you want to order more? (yes/no): ").strip().lower()
-        if more == "no":
+        if more == "no":    # If the user decides not to order more
             break
                         
                          
