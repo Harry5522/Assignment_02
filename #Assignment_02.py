@@ -51,9 +51,9 @@ def main():
         display_menu(menu, stock)  # Display the menu available to the user.  
         choice = input("Enter the name of the item you want to order: ").strip()  # Request product selection from user 
 
-        if choice in menu:
-            if stock[choice] > 0:
-                while True: 
+        if choice in menu:          # Verify that the product is in the list
+            if stock[choice] > 0:   # Check if the product is in stock
+                while True:         # Inner ring to check the required quantity 
                     try:
-                        
+
                     
