@@ -20,25 +20,25 @@ def main():
 
      # Definition of menu with product prices
     menu = {               
-        "Cheesecake": 35,
-        "Kunafa": 30,
-        "Coffee": 20,
-        "Arabic Coffee": 25,
-        "Matcha": 18,
-        "Juice": 10,
-        "Water": 3
+        "cheesecake": 35,
+        "kunafa": 30,
+        "coffee": 20,
+        "arabic Coffee": 25,
+        "matcha": 18,
+        "juice": 10,
+        "water": 3
     } 
 
 
     # Define the stock quantity for each product
     stock = {
-        "Cheesecake": 18,
-        "Kunafa": 15,
-        "Coffee": 23,
-        "Arabic Coffee": 20,
-        "Matcha": 16,
-        "Juice": 21,
-        "Water": 30
+        "cheesecake": 18,
+        "kunafa": 15,
+        "coffee": 23,
+        "arabic Coffee": 20,
+        "matcha": 16,
+        "juice": 21,
+        "water": 30
     }
 
 
@@ -50,7 +50,7 @@ def main():
 
     while True:                    # Continuous loop until the user decides to end the request
         display_menu(menu, stock)  # Display the menu available to the user.
-        choice = input("Enter the name of the item you want to order: ").strip()  # Request product selection from user
+        choice = input("Enter the name of the item you want to order: ").strip().lower()  # Request product selection from user
 
         if choice in menu:          # Verify that the product is in the list
             if stock[choice] > 0:   # Check if the product is in stock
