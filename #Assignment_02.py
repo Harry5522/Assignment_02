@@ -70,7 +70,9 @@ def main():
                     except ValueError:                      # Handling invalid entries
                         print("Invalid input. Please enter a valid number.")
             else:
-                print(f"Sorry, {choice} is out of stock.")
+                print(f"Sorry, {choice} is out of stock.")  # Message if product is not available
+        else:
+            print("Item not found in the menu. Please choose again.")  # Message if the product is not in the list
 
     
                         
