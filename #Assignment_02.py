@@ -38,3 +38,12 @@ stock = {
         "Juice": 21,
         "Water": 30
     }
+
+
+order = []
+print("Welcome to the restaurant!") 
+
+
+while True:
+    
+
