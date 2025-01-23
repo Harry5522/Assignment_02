@@ -104,6 +104,12 @@ def main():
                 change = amount - total   # Remainder calculation
                 print(f"Payment successful! Your change is {change:.2f} AED.")      # Payment Success Message
 
+
+                print("\nRemaining stock after your order:")
+                for item, quantity in order:
+                    print(f"{item}: {stock[item]} units remaining")                 
+                break
+
                         
                          
                         
