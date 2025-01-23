@@ -57,10 +57,12 @@ def main():
                         quantity = int(input(f"How many {choice} would you like to order?: "))  
                         if quantity <= 0:                          # Verify that the entered quantity is valid.
                             print("Quantity must be at least 1.")  # Error message if quantity is incorrect
-                        elif quantity > stock[choice]:
-                            print(f"Sorry, we only have {stock[choice]} {choice} available.")
+                        elif quantity > stock[choice]:             # Check if the required quantity is available in stock
+                            print(f"Sorry, we only have {stock[choice]} {choice} available.")   # Message if the required quantity is more than stock
                         else:
-                            
+
+                            stock[choice] -= quantity 
+                            print(f"{quantity} {choice}(s) added to your order.")
 
     
                         
