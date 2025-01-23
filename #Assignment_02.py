@@ -26,3 +26,15 @@ def main():
         "Juice": 10,
         "Water": 3
     } 
+
+
+
+stock = {
+        "Cheesecake": 18,
+        "Kunafa": 15,
+        "Coffee": 23,
+        "Arabic Coffee": 20,
+        "Matcha": 16,
+        "Juice": 21,
+        "Water": 30
+    }
