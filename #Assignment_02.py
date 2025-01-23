@@ -28,7 +28,7 @@ def main():
     } 
 
 
-
+# Define the stock quantity for each product
 stock = {
         "Cheesecake": 18,
         "Kunafa": 15,
