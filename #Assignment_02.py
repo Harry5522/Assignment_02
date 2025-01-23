@@ -79,6 +79,13 @@ def main():
         more = input("Do you want to order more? (yes/no): ").strip().lower()
         if more == "no":    # If the user decides not to order more
             break
+
+
+
+    if not order:
+        print("You did not order anything.")  
+        return
+
                         
                          
                         
