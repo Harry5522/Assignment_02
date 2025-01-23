@@ -55,5 +55,4 @@ def main():
             if stock[choice] > 0:   # Check if the product is in stock
                 while True:         # Inner ring to check the required quantity 
                     try:
-
-                    
+                        
