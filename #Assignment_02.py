@@ -55,4 +55,9 @@ def main():
             if stock[choice] > 0:   # Check if the product is in stock
                 while True:         # Inner ring to check the required quantity 
                     try:
+                        quantity = int(input(f"How many {choice} would you like to order?: "))  
+                        if quantity <= 0:
+                            print("Quantity must be at least 1.")
+                        
+                         
                         
