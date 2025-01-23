@@ -40,10 +40,10 @@ stock = {
     }
 
 
-order = []
+order = []                     # Empty list will be filled during orders
 print("Welcome to the restaurant!") 
 
 
 while True:
-    
+
 
