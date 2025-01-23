@@ -123,7 +123,6 @@ def main():
     print("Thank you for dining with us!")
 
 
-
 # Run the program if called directly
 if __name__ == "__main__":
     main()
