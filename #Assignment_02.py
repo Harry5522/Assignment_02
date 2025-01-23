@@ -97,8 +97,8 @@ def main():
 
     while True:
         try:
-            amount = float(input("Enter the amount you are paying: "))  
-            if amount < total:                                          
+            amount = float(input("Enter the amount you are paying: "))  # Enter payment amount
+            if amount < total:                                          # Verify that the amount paid is sufficient
                 print(f"Insufficient amount! You need {total - amount} AED more.")
 
                         
