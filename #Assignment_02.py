@@ -110,7 +110,10 @@ def main():
                     print(f"{item}: {stock[item]} units remaining")                 # Print remaining stock                 
                 break
 
-            
+        except ValueError:  # Handling invalid entries
+            print("Invalid input. Please enter a valid number.")
+
+    print("Thank you for dining with us!")
 
                         
                          
