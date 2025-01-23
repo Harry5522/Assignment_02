@@ -100,6 +100,9 @@ def main():
             amount = float(input("Enter the amount you are paying: "))  # Enter payment amount
             if amount < total:                                          # Verify that the amount paid is sufficient
                 print(f"Insufficient amount! You need {total - amount} AED more.")
+            else:
+                change = amount - total  
+                print(f"Payment successful! Your change is {change:.2f} AED.")
 
                         
                          
