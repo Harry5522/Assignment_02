@@ -86,6 +86,13 @@ def main():
         print("You did not order anything.")  
         return
 
+    
+    total = calculate_total(order, menu)  
+    print("\nYour Order:")
+    for item, quantity in order:
+        print(f"- {item} x{quantity}: {menu[item] * quantity} AED")  
+    print(f"Total: {total} AED")
+
                         
                          
                         
